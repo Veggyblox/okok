@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Positioning in CSS</title>
+</head>
+<style>
+    /* Basic styling for the page */
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    /* Sidebar styling */
+    .sidebar {
+        position: fixed;
+        width: 200px;
+        height: 100vh;
+        background-color: navy;
+        color: cornsilk;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .sidebar h2 {
+        color: cornsilk;
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .sidebar ul li {
+        margin: 15px 0;
+    }
+
+    /* Article section styling */
+    .article {
+        margin: left 220px;
+        /* Space for the fixed sidebar */
+        padding: 20px;
+        width: calc(100% - 220px);
+        background-color: cornsilk;
+    }
+
+    .article h1 {
+        color: darkslategray;
+    }
+
+    .image-gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .image-gallery img {
+        width: 100%;
+        height: auto;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .image-gallery img:hover {
+        opacity: 0.5;
+    }
+
+    #img1 {
+        width: 300px;
+        height: 200px;
+    }
+</style>
+
+<body>
+    <!-- Sidebar Section -->
+    <div class="sidebar">
+        <h2>Sidebar menu</h2>
+        <ul>
+            <li><a href="https://www.codingal.com/courses/scratch-programming/"
+                    style="color: white; text-decoration: none;">Home</a></li>
+            <li><a href="#" style="color: white; text-decoration: none;">Home</a></li>
+            <li><a href="#" style="color: white; text-decoration: none;">Home</a></li>
+            <li><a href="#" style="color: white; text-decoration: none;">Home</a></li>
+        </ul>
+    </div>
+
+    <!-- Article Section -->
+    <div class="article">
+        <h1>Article title</h1>
+        <p>I like pizza and dumplings</p>
+
+        <!-- Image Gallery Section -->
+        <div class="image-gallery">
+            <h2>Image Gallery</h2>
+            <img src="https://th.bing.com/th/id/OIP.2dhr5Ln6cMHIu9SmwE_uBgHaE7?rs=1&pid=ImgDetMain" alt="image 1"
+                id="img1">
+            <img src="https://th.bing.com/th/id/OIP.2dhr5Ln6cMHIu9SmwE_uBgHaE7?rs=1&pid=ImgDetMain" alt="image 2"
+                id="img2">
+            <img src="https://th.bing.com/th/id/OIP.2dhr5Ln6cMHIu9SmwE_uBgHaE7?rs=1&pid=ImgDetMain" alt="image 3"
+                id="img3">
+            <img src="https://th.bing.com/th/id/OIP.2dhr5Ln6cMHIu9SmwE_uBgHaE7?rs=1&pid=ImgDetMain" alt="image 4"
+                id="img4">
+        </div>
+        <!-- Image Gallery Section -->
+        <div class="image-gallery">
+            <h2>Image Gallery</h2>
+            <img src="https://th.bing.com/th/id/OIP.2dhr5Ln6cMHIu9SmwE_uBgHaE7?rs=1&pid=ImgDetMain" alt="image 1"
+                id="img1">
+            <img src="https://th.bing.com/th/id/OIP.2dhr5Ln6cMHIu9SmwE_uBgHaE7?rs=1&pid=ImgDetMain" alt="image 2"
+                id="img2">
+            <img src="https://th.bing.com/th/id/OIP.2dhr5Ln6cMHIu9SmwE_uBgHaE7?rs=1&pid=ImgDetMain" alt="image 3"
+                id="img3">
+            <img src="https://th.bing.com/th/id/OIP.2dhr5Ln6cMHIu9SmwE_uBgHaE7?rs=1&pid=ImgDetMain" alt="image 4"
+                id="img4">
+        </div>
+    </div>
+</body>
+
+</html>
